@@ -3,44 +3,78 @@
 <head>
 <title>login_page</title>
 <style>
-h1{
-	color:green;
-	background-color:yellow;
-	text-align:center;
-	margin-top:50px;
-	}
-#jas{
-	width:20vw;
-	background-color:red;
-	font-size:15px;
-	}
-#form{
-text-align:right;
-border:3px solid red;
-border-radius:6px;
-margin-left:70%;
-height:30vh;
-}
+.login{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    background: url(https://img.freepik.com/premium-vector/network-connection-background-abstract-style_23-2148875738.jpg);
+    color: white;
+    border-radius: 20px;
+    background-size: cover;
+    
 
-h2{
-color:green;
-text-align:center;
-margin-left:60%;
-	}
-h5{
-	margin-top:170px;
-	text-align:center;
-	background-color:black;
-	color:white;
-	height:5vh;
-	padding-top:20px;
-	padding-bottom:10px;
-	}
-input[type=text]:focus{
-	background-color:orange;
-	outline:none;
-	width:auto;
-	}
+}
+form{
+    display: block;
+    box-sizing: border-box;
+    padding: 60px;
+    max-width: 100%;
+    height: 100%;
+    backdrop-filter:brightness(100%);
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    
+}
+h1{
+    font-weight: normal;
+    font-size: 60px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+    margin-bottom: 60px;
+   /* background-image: linear-gradient(to right red,greeen,blue,yellow);*/
+   background-image: linear-gradient(rgb(225, 120, 22),white,green);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   
+   
+}
+label{
+    color: rgba(255,255,255,0.5);
+text-transform: uppercase;
+font-size: 14px;
+padding-right:230px;
+}
+input{
+    background: rgba(255,255,255,0.5);
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+button{
+    background: blue;
+    border: none;
+    border-radius: 40px;
+    height: 40px;
+    margin: 10px 0px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+label:hover{
+    color:  rgb(201, 229, 45);
+}
+button:hover{
+    background-color: white;
+    color: blue;
+}
+input:hover{
+    background-color: bisque;
+}
 
 </style>
 </head>
@@ -59,20 +93,21 @@ return false;
 }  
 </script>  
 <body>
-	<h1>faculty portal</h1><br><hr><hr>
-<div>
-<form name="myform" method="POST">
-	<h2>Login||staff</h2>
-<table id="form">
-<tr>
-<td>Id: <input type="text" name="id" placeholder="Id"></td></tr>
-<tr>
-<td>Password: <input type="password" name="pwd" placeholder="Password"></td></tr> 
-<td><input type="submit" value="Login" name="jas"></td>
-<tr><th><a href="#">forgot Password?</a></th></tr>
-</div>
-</table>  
+  <center>
+ <div class="login">
+  
+  <form>
+     <h1>login</h1>
+  <label>username</label>
+  <input type="text">
+  <label>password</label>
+  <input type="password">
+  <button>submit</button>
 </form>
+
+ </div> 
+  </center>
+
 <h5>©2024 -Deprtment of Data Science.All Rights Reserved</h5>
 </body>
 </html>
